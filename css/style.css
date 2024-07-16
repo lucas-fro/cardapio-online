@@ -22,13 +22,6 @@ header {
     margin: auto;
     max-width: 1250px;
     position: relative;
-}
-
-.logo-e-img {
-    position: relative;
-}
-
-.img-header {
     height: 300px;
     background-image: url(../img/bar.jpg);
     background-position: center;
@@ -47,26 +40,17 @@ header {
     transform: translate(-50%, -50%);
 }
 
-.cabecalho {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
-}
-
 .logo img {
     width: 100%;
 }
 
-.cabecalho {
-    padding: 20px;
-}
-
 .redes {
     display: flex;
-    justify-content: end;
-    align-items: center;
     gap: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
 }
 
 .btn-white {
@@ -141,7 +125,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 0px 10px;
     margin-bottom: 25px;
     color: var(--cor-text);
 }
@@ -150,6 +135,12 @@ header {
     flex-grow: 1;
     border-bottom: dotted;
     border-bottom-width: 1px;
+}
+
+.descricao {
+    width: 100%;
+    font-size: 0.80rem;
+    color: #836a5a;
 }
 
 .div-img img {
