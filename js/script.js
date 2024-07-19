@@ -51,15 +51,15 @@ const menu = {
     ],
 
     pizzas: [
-        { nomeItem: "Mussarela", preco: 29.90, descricao: "Molho de tomate, mussarela, tomate fresco e manjericão.", imgPizza: "../img/mussarela.png" },
-        { nomeItem: "Pepperoni", preco: 29.90, descricao: "Molho de tomate, mussarela e fatias de pepperoni.", imgPizza: "../img/peperoni.png" },
-        { nomeItem: "Portuguesa", preco: 29.90, descricao: "Molho de tomate, mussarela, gorgonzola, parmesão e catupiry.", imgPizza: "../img/portuguesa.png" },
-        { nomeItem: "Azeitona Roxa", preco: 29.90, descricao: "Molho de tomate, mussarela, presunto, ovo, cebola e azeitonas.", imgPizza: "../img/azeitonaRoxa.png" },
-        { nomeItem: "Cogumelos", preco: 29.90, descricao: "Molho de tomate, mussarela, cogumelos e catupiry.", imgPizza: "../img/cogumelos.png" },
-        { nomeItem: "Manjericão", preco: 29.90, descricao: "Molho de tomate, mussarela, calabresa e cebola.", imgPizza: "../img/mangericao.png" },
-        { nomeItem: "Frango", preco: 29.90, descricao: "Molho de tomate, mussarela, pimentão, cebola e frango desfiado.", imgPizza: "../img/frango.png" },
-        { nomeItem: "Espinafre", preco: 29.90, descricao: "Molho de tomate, mussarela e espinafre.", imgPizza: "../img/espinafre.png" },
-        { nomeItem: "Chocolate", preco: 29.90, descricao: "Chocolate e morango.", imgPizza: "../img/chocolate.png" }
+        { nomeItem: "Mussarela", preco: 29.90, descricao: "Molho de tomate, mussarela, tomate fresco e manjericão.", imgPizza: "./img/mussarela.png" },
+        { nomeItem: "Pepperoni", preco: 29.90, descricao: "Molho de tomate, mussarela e fatias de pepperoni.", imgPizza: "./img/peperoni.png" },
+        { nomeItem: "Portuguesa", preco: 29.90, descricao: "Molho de tomate, mussarela, gorgonzola, parmesão e catupiry.", imgPizza: "./img/portuguesa.png" },
+        { nomeItem: "Azeitona Roxa", preco: 29.90, descricao: "Molho de tomate, mussarela, presunto, ovo, cebola e azeitonas.", imgPizza: "./img/azeitonaRoxa.png" },
+        { nomeItem: "Cogumelos", preco: 29.90, descricao: "Molho de tomate, mussarela, cogumelos e catupiry.", imgPizza: "./img/cogumelos.png" },
+        { nomeItem: "Manjericão", preco: 29.90, descricao: "Molho de tomate, mussarela, calabresa e cebola.", imgPizza: "./img/mangericao.png" },
+        { nomeItem: "Frango", preco: 29.90, descricao: "Molho de tomate, mussarela, pimentão, cebola e frango desfiado.", imgPizza: "./img/frango.png" },
+        { nomeItem: "Espinafre", preco: 29.90, descricao: "Molho de tomate, mussarela e espinafre.", imgPizza: "./img/espinafre.png" },
+        { nomeItem: "Chocolate", preco: 29.90, descricao: "Chocolate e morango.", imgPizza: "./img/chocolate.png" }
       ],
       
     semAlcool: [
