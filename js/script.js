@@ -50,7 +50,19 @@ const menu = {
         { nomeItem: "Linguiça Toscana", preco: 11.90, descricao: " " }
     ],
 
-    SemAlcool: [
+    pizzas: [
+        { nomeItem: "Mussarela", preco: 29.90, descricao: "Molho de tomate, mussarela, tomate fresco e manjericão.", imgPizza: "../img/mussarela.png" },
+        { nomeItem: "Pepperoni", preco: 29.90, descricao: "Molho de tomate, mussarela e fatias de pepperoni.", imgPizza: "../img/peperoni.png" },
+        { nomeItem: "Portuguesa", preco: 29.90, descricao: "Molho de tomate, mussarela, gorgonzola, parmesão e catupiry.", imgPizza: "../img/portuguesa.png" },
+        { nomeItem: "Azeitona Roxa", preco: 29.90, descricao: "Molho de tomate, mussarela, presunto, ovo, cebola e azeitonas.", imgPizza: "../img/azeitonaRoxa.png" },
+        { nomeItem: "Cogumelos", preco: 29.90, descricao: "Molho de tomate, mussarela, cogumelos e catupiry.", imgPizza: "../img/cogumelos.png" },
+        { nomeItem: "Manjericão", preco: 29.90, descricao: "Molho de tomate, mussarela, calabresa e cebola.", imgPizza: "../img/mangericao.png" },
+        { nomeItem: "Frango", preco: 29.90, descricao: "Molho de tomate, mussarela, pimentão, cebola e frango desfiado.", imgPizza: "../img/frango.png" },
+        { nomeItem: "Espinafre", preco: 29.90, descricao: "Molho de tomate, mussarela e espinafre.", imgPizza: "../img/espinafre.png" },
+        { nomeItem: "Chocolate", preco: 29.90, descricao: "Chocolate e morango.", imgPizza: "../img/chocolate.png" }
+      ],
+      
+    semAlcool: [
         { nomeItem: "Água", preco: 6.90, descricao: " " },
         { nomeItem: "Água com gás", preco: 6.90, descricao: " " },
         { nomeItem: "H2O", preco: 11.90, descricao: " " },
@@ -80,17 +92,38 @@ function mostrarItens(menuTipo, elementoId) {
     const container = document.getElementById(elementoId);
 
     menu[menuTipo].forEach(item => {
-        const divItem = document.createElement('div');
-        divItem.classList.add('menu-item');
 
-        divItem.innerHTML = `
-            <span class="nomeItem">${item.nomeItem}</span>
-            <span class="separador"></span>
-            <span class="preco">R$ ${formatarPreco(item.preco)}</span>
-            <span class="descricao">${item.descricao}</span>
-        `;
+        if (menuTipo == 'pizzas' || elementoId == 'itens-pizzas'){
+            const pizzaItem = document.createElement('div');
+            pizzaItem.classList.add('pizza-item')
 
-        container.appendChild(divItem);
+            pizzaItem.innerHTML = `
+                <div class="img-pizzas">
+                    <img src="${item.imgPizza}" alt="">
+                </div>
+                <div class="menu-item">
+                    <span class="nomeItem">${item.nomeItem}</span>
+                    <span class="separador"></span>
+                    <span class="preco">R$ ${formatarPreco(item.preco)}</span>
+                    <span class="descricao">${item.descricao}</span>
+                </div>
+            `;
+
+            container.appendChild(pizzaItem);
+        }else{
+
+            const divItem = document.createElement('div');
+            divItem.classList.add('menu-item');
+
+            divItem.innerHTML = `
+                <span class="nomeItem">${item.nomeItem}</span>
+                <span class="separador"></span>
+                <span class="preco">R$ ${formatarPreco(item.preco)}</span>
+                <span class="descricao">${item.descricao}</span>
+            `;
+
+            container.appendChild(divItem);
+        }
     });
 }
 
@@ -99,4 +132,5 @@ mostrarItens('petisco', 'itens-petisco');
 mostrarItens('drinks', 'itens-drinks');
 mostrarItens('cerveja', 'itens-cerveja');
 mostrarItens('espetinho', 'itens-espetinho');
-mostrarItens('SemAlcool', 'itens-sem-alcool');
+mostrarItens('semAlcool', 'itens-sem-alcool');
+mostrarItens('pizzas', 'itens-pizzas');

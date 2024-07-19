@@ -129,6 +129,7 @@ header {
     gap: 0px 10px;
     margin-bottom: 25px;
     color: var(--cor-text);
+    width: 100%;
 }
 
 .separador {
@@ -144,6 +145,22 @@ header {
 }
 
 .div-img img {
+    width: 100%;
+}
+
+.pizza-item {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 3px dashed rgb(170, 170, 170);
+}
+
+.img-pizzas {
+    width: 100px;
+}
+
+.img-pizzas img {
     width: 100%;
 }
 
